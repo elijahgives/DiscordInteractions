@@ -45,6 +45,9 @@ public enum Route
     GET_GUILD(Type.GET, "guilds/%d"),
     ADD_GUILD_MEMBER_ROLE(Type.PUT, "/guilds/%d/members/%d/roles/%d"),
     REMOVE_GUILD_MEMBER_ROLE(Type.DELETE, "/guilds/%d/members/%d/roles/%d"),
+
+    // guild roles
+    CREATE_GUILD_ROLE(type.POST, "guilds/%d/roles"),
     ;
     
     public static final String BASE_URL = "https://discordapp.com/api/v8/";
